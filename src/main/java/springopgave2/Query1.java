@@ -4,26 +4,14 @@ import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class Query {
-    private static final String JDBC_URL="jdbc:mysql://localhost:3306/hr";
-    private static final String USER="root";
-    private static final String PSW="";
+public class Query1 {
 
-    public Query (){
-    }
-
-    private static Connection makeConnection() {
-        Connection con = null;
-        try {
-            con = DriverManager.getConnection(JDBC_URL, USER, PSW);
-        }   catch (SQLException e) {
-                System.out.println(e.getMessage());
-        }
-        return con;
+    public Query1(){
     }
 
     public ArrayList filledArrayList(String department) {
-        Connection con = makeConnection();
+        DbConnection db = new DbConnection();
+        Connection con = db.makeConnection();
         ArrayList<Salary> salaries = new ArrayList<>();
 
         try (PreparedStatement stmt = con.prepareStatement("select last_name, salary from employees " +

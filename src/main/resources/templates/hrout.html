@@ -6,7 +6,10 @@
 </head>
 <body>
 <table>
-    <p th:text="'Hello, ' + ${test} + '!'" />
+    <tr th:each="s : ${salaries}">
+        <td th:text="${s.last_name}"></td>
+        <td th:text="${s.salary}"></td>
+    </tr>
 </table>
 </body>
 </html>

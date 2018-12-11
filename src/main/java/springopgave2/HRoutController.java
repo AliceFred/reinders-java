@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class HRdbController {
-    @RequestMapping("/hrout2.html")
-    public String hrout2(
+public class HRoutController {
+    @RequestMapping("/hrout.html")
+    public String hrout(
             @RequestParam(name="department") String name, Model model
     ) {
-        Query q = new Query();
+        Query1 q = new Query1();
         model.addAttribute("salaries", q.filledArrayList(name));
         //model.addAttribute("test", name);
-        return "hrout2";
+        return "hrout";
     }
 
 }
