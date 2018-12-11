@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HRdata</title>
+</head>
+<body>
+<table>
+    <tr th:each="s : ${salaries}">
+        <td th:text="${s.last_name}"></td>
+        <td th:text="${s.salary}"></td>
+    </tr>
+</table>
+</body>
+</html>
