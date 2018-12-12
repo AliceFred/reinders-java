@@ -1,4 +1,4 @@
-package springopgave2;
+package springopgave;
 
 import java.math.BigDecimal;
 import java.sql.*;

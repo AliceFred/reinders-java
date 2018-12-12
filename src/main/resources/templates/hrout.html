@@ -5,7 +5,9 @@
     <title>HRdata</title>
 </head>
 <body>
-<table>
+<table width="400" cellpading="10" cellspacing="5">
+    <th>Last name</th>
+    <th>Salary</th>
     <tr th:each="s : ${salaries}">
         <td th:text="${s.last_name}"></td>
         <td th:text="${s.salary}"></td>

@@ -1,4 +1,4 @@
-package springopgave2;
+package springopgave;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

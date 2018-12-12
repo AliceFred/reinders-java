@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Titel</title>
+    <title>Invoer pagina</title>
 </head>
-<body>
-    <h1>Titel</h1>
-    <p><a href="/greeting.html">Link</a></p>
+    <h1>Invoerpagina voor de opgaven</h1>
+    <h3>Erwin Reinders</h3>
 
     <form action="/greeting.html">
-        <input type="text" name="fullname" /><br />
-        <input type="submit" value="Opsturen" /><br />
+        <p><strong>Opgave 1: </strong>type je naam en wordt gegroet</p>
+        <p>Naam: <input type="text" name="fullname" /></p>
+        <input type="submit" value="Opsturen" /><a href="/greeting.html">Link</a><br /><br />
     </form>
     <form action="/sumout.html">
-        <input type="number" name="a" /><br />
-        <input type="number" name="b" /><br />
-        <input type="submit" value="Calculate" /><br />
+        <p><strong> Opgave 2: </strong>geef twee getallen op en zie de optelling</p>
+        <p>Getal a : <input type="number" name="a" /></p>
+        <p>Getal b : <input type="number" name="b" /></p>
+        <input type="submit" value="Calculate" /><br /><br />
     </form>
-    <form action="/hrout2.html">
-        <input type="text" name="department" /><br />
-        <input type="submit" value="Query" /><br />
+    <form action="/hrout.html">
+        <p><strong>Opgave 3: </strong>type de afdeling en ontvang een lijst met medewerkers</p>
+        <p>Type department: <input type="text" name="department" /></p>
+        <input type="submit" value="Query" /><br /><br />
     </form>
 
     <form action="/hrupdate.html">
-        <input type="text" name="last_name" /><br />
-        <input type="text" name="id" /><br />
+        <p><strong>Opgave 4: </strong>update manager id van medewerker</p>
+        <p>Type last name: <input type="text" name="last_name" /></p>
+        <p>Type manager id: <input type="text" name="id" /></p>
         <input type="submit" value="Query" /><br />
     </form>
 </body>
